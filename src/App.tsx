@@ -169,6 +169,7 @@ export default function App() {
   const startNewGame = () => {
     const random = cities[Math.floor(Math.random() * cities.length)];
     setSecretCity(random);
+    console.log("The secret city is:", random.name);
     setGuess("");
     setGuesses([]);
     setGameOver(false);
